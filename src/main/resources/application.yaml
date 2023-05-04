@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost;encrypt=true;trustServerCertificate=true;databaseName=companydb
+    username: admin
+    password: 123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
